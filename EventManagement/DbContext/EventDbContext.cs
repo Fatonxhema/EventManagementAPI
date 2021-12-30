@@ -1,14 +1,13 @@
 ﻿using System;
+using Microsoft.EntityFrameworkCore;
 
 /// <summary>
 /// Summary description for Class1
 /// </summary>
-public class EventDbContext
+public class EventDbContext : DbContext
 {
-	public EventDbContext()
+	public EventDbContext(DbContextOptions options):base(options)
 	{
-		//
-		// TODO: Add constructor logic here
-		//
 	}
+	DbSet<Event> Events { get; set; }
 }
