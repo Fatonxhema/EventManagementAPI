@@ -41,7 +41,7 @@ namespace EventManagementAPI.Services
             return null;
         }
 
-        public User UpdateEvent(User u)
+        public User UpdateUser(User u)
         {
             _context.Entry(u).State = EntityState.Modified;
             _context.SaveChanges();
