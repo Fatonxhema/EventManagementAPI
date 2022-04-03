@@ -12,7 +12,7 @@ namespace EventManagementAPI.Data
         public DataContext(DbContextOptions<DataContext> options) : base(options)
         {
         }
-
+        
         public DbSet<Event> Event { get; set; }
         public DbSet<Lecturer> Lecturer { get; set; }
         public DbSet<User> User { get; set; }
